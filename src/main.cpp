@@ -32,3 +32,7 @@ void calculateSum()                                      // calculate the sum of
   Serial.print("The sum is: ");                         // to print the sum
   Serial.println(num1 + num2);
 }
+
+void loop(){
+  calculateSum();
+}
