@@ -1,21 +1,17 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+int sum(int a, int b){
+  return a+b;
+}
+void setup(){
+  Serial.begin(9600);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop(){
+  int a, b;
+
+  a = Serial.parseInt();
+  b = Serial.parseInt(); 
+  Serial.println(sum(a,b));
 }
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
-
-
-void lightshift()
